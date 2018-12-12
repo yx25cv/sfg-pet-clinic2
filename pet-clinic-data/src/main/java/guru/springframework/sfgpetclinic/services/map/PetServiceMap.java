@@ -6,9 +6,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+/**
+ * Created by jt on 7/21/18.
+ */
 @Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
-
     @Override
     public Set<Pet> findAll() {
         return super.findAll();
@@ -20,13 +22,13 @@ public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetS
     }
 
     @Override
-    public Pet save(Pet pet) {
-        return super.save(pet);
+    public Pet save(Pet object) {
+        return super.save(object);
     }
 
     @Override
-    public void delete(Pet pet) {
-        super.delete(pet);
+    public void delete(Pet object) {
+        super.delete(object);
     }
 
     @Override

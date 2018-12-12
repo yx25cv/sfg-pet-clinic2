@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+/**
+ * Created by jt on 7/21/18.
+ */
 @Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
@@ -20,17 +23,17 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
     }
 
     @Override
-    public Vet save(Vet vet) {
-        return super.save(vet);
+    public Vet save(Vet object) {
+        return super.save(object);
     }
 
     @Override
-    public void delete(Vet vet) {
-        super.delete(vet);
+    public void delete(Vet object) {
+        super.delete(object);
     }
 
     @Override
     public void deleteById(Long id) {
-        this.deleteById(id);
+        super.deleteById(id);
     }
 }
